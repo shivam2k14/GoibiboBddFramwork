@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="76.852527">
+<testcase classname="Acceptance testing." name="Validate ticketBooking" time="76.852527">
+<system-out><![CDATA[Given I am on the Home Page  of goibibo Website.............................passed
+Then I check the title of the page..........................................passed
+Then I select RoundTrip radioButton.........................................passed
+Then I enter  departure city  values........................................passed
+Then I enter  destination city  values......................................passed
+Then I naviagte to month of departure date..................................passed
+Then I click on day of departure date.......................................passed
+Then I naviagte to month of destination date................................passed
+Then I click on day of destination date.....................................passed
+Then I click on Search Flights..............................................passed
+Then I select the highest price of departure flight.........................passed
+Then I select the highest price of destination flight.......................passed
+Then I click on Book Flights................................................passed
+Then I scroll upto Traveller Protection Form................................passed
+Then I select Secure Option on Travller Protetion radioButton...............passed
+Then I scroll UptO Traveller Details Form...................................passed
+Then I enter the Full name..................................................passed
+Then I enter the Email id...................................................passed
+Then I enter the phone number...............................................passed
+Then I click on proceed button..............................................passed
+Then I click on SafetyCovidMsz..............................................passed
+Then I scroll upto Payment Options..........................................passed
+Then I click On wallet section of Payment...................................passed
+Then I click on AmazonPay Payment Option....................................passed
+Then I click on Pay Button..................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
