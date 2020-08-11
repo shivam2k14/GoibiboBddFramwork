@@ -8,8 +8,8 @@ Selenium WebDriver cucumber Junit Maven PageObject Model
   **@GoibiboFlighBooking**
   *Scenario: Validate ticketBooking*
     1. Given I am on the Home Page  of goibibo Website
-    2. Then I check the title of the page
-    3. Then I select RoundTrip radioButton
+    1. Then I check the title of the page
+    1. Then I select RoundTrip radioButton
     Then I enter  departure city  values 
     Then I enter  destination city  values 
     Then I naviagte to month of departure date
