@@ -1,4 +1,4 @@
-package com.goibibo.qa.pages.actions;
+package com.goibibo.qa.pages.locators;
 
 import java.io.IOException;
 
@@ -13,6 +13,9 @@ import com.goibibo.qa.util.TestUtil;
 
 public class BookFlightPageLocators {
 
+	
+	String xpath="//*[@class=\"fltHpyOnwrdWrp\"]//span[@class=\"fb ico11  hpyBlueLt \"]";
+	
 	public static final String xpathOfSortPriceOnDecreasing="//*[@class=\"fltHpyOnwrdWrp\"]//span[@class=\"fb ico11  hpyBlueLt \"]";
 	@FindBy(xpath=xpathOfSortPriceOnDecreasing)
 	public WebElement elemOfSortPriceOnDecreasing;
@@ -26,7 +29,12 @@ public class BookFlightPageLocators {
 	@FindBy(xpath=xpathSelectHighestPriceOfFlightOnDeparture)
 	public WebElement elemSelectHighestPriceOfFlightOnDeparture;
 	
-
+	public static final String xpathOfSortPriceOnDecreasingReturn="//div[@class=\"fltHpyRtrnWrp\"]//span[@class=\"fb ico11  hpyBlueLt \"]";
+	@FindBy(xpath=xpathOfSortPriceOnDecreasingReturn)
+	public WebElement elemOfSortPriceOnDecreasingReturn;
+	
+	//String xpathSelectHigh="//div[@class=\"fltHpyRWrap dF justifyBetween\"]/div[2]/div[1]/div[1]//div[@class=\"dF alignItemsEnd\"]/span[2]/label";
+	
 	public static final String xpathSelectHighestPriceOfFlightOnReturn="//div[@class=\"fltHpyRWrap dF justifyBetween\"]/div[2]/div[1]/div[1]//div[@class=\"dF alignItemsEnd\"]/span[2]/label";
 	@FindBy(xpath=xpathSelectHighestPriceOfFlightOnReturn)
 	public WebElement elemSelectHighestPriceOfFlightOnReturn;

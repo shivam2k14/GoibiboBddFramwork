@@ -13,7 +13,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 7671041216,
+  "duration": 35030141464,
   "status": "passed"
 });
 formatter.scenario({
@@ -92,66 +92,96 @@ formatter.step({
 });
 formatter.step({
   "line": 20,
-  "name": "I click on Book Flights",
+  "name": "I wait for three sec_take_screnshotIst",
   "keyword": "Then "
 });
 formatter.step({
   "line": 21,
-  "name": "I scroll upto Traveller Protection Form",
+  "name": "I capture screenshotIst",
   "keyword": "Then "
 });
 formatter.step({
   "line": 22,
-  "name": "I select Secure Option on Travller Protetion radioButton",
+  "name": "I click on Book Flights",
   "keyword": "Then "
 });
 formatter.step({
   "line": 23,
-  "name": "I scroll UptO Traveller Details Form",
+  "name": "I scroll upto Traveller Protection Form",
   "keyword": "Then "
 });
 formatter.step({
   "line": 24,
-  "name": "I enter the Full name",
+  "name": "I select Secure Option on Travller Protetion radioButton",
   "keyword": "Then "
 });
 formatter.step({
   "line": 25,
-  "name": "I enter the Email id",
+  "name": "I scroll UptO Traveller Details Form",
   "keyword": "Then "
 });
 formatter.step({
   "line": 26,
-  "name": "I enter the phone number",
+  "name": "I enter the Full name",
   "keyword": "Then "
 });
 formatter.step({
   "line": 27,
-  "name": "I click on proceed button",
+  "name": "I enter the Email id",
   "keyword": "Then "
 });
 formatter.step({
   "line": 28,
-  "name": "I click on SafetyCovidMsz",
+  "name": "I enter the phone number",
   "keyword": "Then "
 });
 formatter.step({
   "line": 29,
-  "name": "I scroll upto Payment Options",
+  "name": "I wait for three sec_take_screnshotSecond",
   "keyword": "Then "
 });
 formatter.step({
   "line": 30,
-  "name": "I click On wallet section of Payment",
+  "name": "I capture screenshotSecond",
   "keyword": "Then "
 });
 formatter.step({
   "line": 31,
-  "name": "I click on AmazonPay Payment Option",
+  "name": "I click on proceed button",
   "keyword": "Then "
 });
 formatter.step({
   "line": 32,
+  "name": "I click on SafetyCovidMsz",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 33,
+  "name": "I scroll upto Payment Options",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 34,
+  "name": "I click On wallet section of Payment",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 35,
+  "name": "I click on AmazonPay Payment Option",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 36,
+  "name": "I wait for three sec_take_screnshotThird",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 37,
+  "name": "I capture screenshotThird",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 38,
   "name": "I click on Pay Button",
   "keyword": "Then "
 });
@@ -159,175 +189,217 @@ formatter.match({
   "location": "HomePageTest.i_am_on_the_Home_Page_of_goibibo_Website()"
 });
 formatter.result({
-  "duration": 7173303758,
+  "duration": 17128639160,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_check_the_title_of_the_page()"
 });
 formatter.result({
-  "duration": 85833500,
+  "duration": 11032873,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_select_RoundTrip_radioButton()"
 });
 formatter.result({
-  "duration": 1408728853,
+  "duration": 11196767780,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_enter_departure_city_values()"
 });
 formatter.result({
-  "duration": 991121901,
+  "duration": 3039832811,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_enter_destination_city_values()"
 });
 formatter.result({
-  "duration": 872558674,
+  "duration": 2796690621,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_naviagte_to_month_of_departure_date()"
 });
 formatter.result({
-  "duration": 1292434507,
+  "duration": 4531484499,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_click_on_day_of_departure_date()"
 });
 formatter.result({
-  "duration": 1221529858,
+  "duration": 1556962017,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_naviagte_to_month_of_destination_date()"
 });
 formatter.result({
-  "duration": 397561949,
+  "duration": 2357365080,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_click_on_day_of_destination_date()"
 });
 formatter.result({
-  "duration": 1926002356,
+  "duration": 1437295744,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageTest.i_click_on_Search_Flights()"
 });
 formatter.result({
-  "duration": 367560555,
+  "duration": 331282003,
   "status": "passed"
 });
 formatter.match({
   "location": "BookFlightTest.i_select_the_highest_price_of_departure_flight()"
 });
 formatter.result({
-  "duration": 35295252194,
+  "duration": 7964680199,
   "status": "passed"
 });
 formatter.match({
   "location": "BookFlightTest.i_select_the_highest_price_of_destination_flight()"
 });
 formatter.result({
-  "duration": 624804462,
+  "duration": 788562979,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BookFlightTest.i_wait_for_three_sec_take_screnshot1()"
+});
+formatter.result({
+  "duration": 2999733747,
+  "status": "passed"
+});
+formatter.match({
+  "location": "BookFlightTest.i_capture_screenshot1()"
+});
+formatter.result({
+  "duration": 524799209,
   "status": "passed"
 });
 formatter.match({
   "location": "BookFlightTest.i_click_on_Book_Flights()"
 });
 formatter.result({
-  "duration": 625513864,
+  "duration": 561108552,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_scroll_upto_Traveller_Protection_Form()"
 });
 formatter.result({
-  "duration": 3897244680,
+  "duration": 2623243172,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_select_Secure_Option_on_Travller_Protetion_radioButton()"
 });
 formatter.result({
-  "duration": 350598886,
+  "duration": 396947335,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_scroll_UptO_Traveller_Details_Form()"
 });
 formatter.result({
-  "duration": 209942143,
+  "duration": 53612731,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_enter_the_Full_name()"
 });
 formatter.result({
-  "duration": 955852814,
+  "duration": 902704967,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_enter_the_Email_id()"
 });
 formatter.result({
-  "duration": 162662718,
+  "duration": 211633238,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_enter_the_phone_number()"
 });
 formatter.result({
-  "duration": 306756593,
+  "duration": 311980816,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TravellersInfoTest.i_wait_for_three_sec_take_screnshot2()"
+});
+formatter.result({
+  "duration": 3000066413,
+  "status": "passed"
+});
+formatter.match({
+  "location": "TravellersInfoTest.i_capture_screenshot2()"
+});
+formatter.result({
+  "duration": 389551434,
   "status": "passed"
 });
 formatter.match({
   "location": "TravellersInfoTest.i_click_on_proceed_button()"
 });
 formatter.result({
-  "duration": 229557279,
+  "duration": 250144447,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentTest.i_click_on_SafetyCovidMsz()"
 });
 formatter.result({
-  "duration": 4245968329,
+  "duration": 17466930061,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentTest.i_scroll_upto_Payment_Options()"
 });
 formatter.result({
-  "duration": 167515636,
+  "duration": 75259476,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentTest.i_click_On_wallet_section_of_Payment()"
 });
 formatter.result({
-  "duration": 204985984,
+  "duration": 257610985,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentTest.i_click_on_AmazonPay_Payment_Option()"
 });
 formatter.result({
-  "duration": 5788561169,
+  "duration": 8444413318,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PaymentTest.i_wait_for_three_sec_take_screnshot3()"
+});
+formatter.result({
+  "duration": 4999485607,
+  "status": "passed"
+});
+formatter.match({
+  "location": "PaymentTest.i_capture_screenshot3()"
+});
+formatter.result({
+  "duration": 418872405,
   "status": "passed"
 });
 formatter.match({
   "location": "PaymentTest.i_click_on_Pay_Button()"
 });
 formatter.result({
-  "duration": 379633079,
+  "duration": 283223139,
   "status": "passed"
 });
 });

@@ -1,4 +1,4 @@
-package com.goibibo.qa.pages.actions;
+package com.goibibo.qa.pages.locators;
 
 import java.io.IOException;
 
@@ -24,11 +24,11 @@ public class TravellerDetailsInfoPageLocators  {
    @FindBy(xpath=notSecureProtectionXpath)
    public WebElement notSecureProtectionElem;
   
-    public static final String xpathOfTravellersDetailsForm="//div[@class=\"flightDetails fl\"]/div[4]/div/div/div/span[contains(text(),\"Traveller\")]";
+    public static final String xpathOfTravellersDetailsForm="//div[@class=\"flightDetails fl\"]//span[contains(text(),\"Traveller\")]";
    @FindBy(xpath=xpathOfTravellersDetailsForm)
    public WebElement elemOfTravellersDetailsForm;
 	
-   public static final String XpathOnFullNameSection="//div[@class=\"flightDetails fl\"]/div[4]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[1]";
+   public static final String XpathOnFullNameSection="//div[@class=\"flightDetails fl\"]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[1]";
    public static final String constXpathOnFullNameSection=XpathOnFullNameSection+"/div[2]/div[1]/div[2]";
 	
 	public static final String titleXpathOnFullNameSection=    constXpathOnFullNameSection+"/div[1]/select";
@@ -48,14 +48,14 @@ public class TravellerDetailsInfoPageLocators  {
 	public WebElement lastNameElemOnFullNameSection;
 	
 
-	public static final String XpathOnEmailSection="//div[@class=\"flightDetails fl\"]/div[4]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[2]";
+	public static final String XpathOnEmailSection="//div[@class=\"flightDetails fl\"]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[2]";
 	public static final String constXpathOnEmailSection=XpathOnEmailSection+"/div[2]/div[1]";
 	
 	public static final String emailXpathOnEmailSection=constXpathOnEmailSection+"/input";
 	@FindBy(xpath=emailXpathOnEmailSection)
 	public WebElement emailElemOnEmailSection;
 	
-	public static final String XpathOnPhoneSection="//div[@class=\"flightDetails fl\"]/div[4]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[3]";
+	public static final String XpathOnPhoneSection="//div[@class=\"flightDetails fl\"]//form[@id=\"travellerForm\"]/div[1]/div[4]/div[3]";
 	public static final String constXpathOnPhoneSection=XpathOnPhoneSection+"/div[2]/div";
 	
 	public static final String mobileCodeXpathOnPhoneSection=constXpathOnPhoneSection+"/div[1]/select";
@@ -67,7 +67,7 @@ public class TravellerDetailsInfoPageLocators  {
 	public WebElement mobileNumberElemOnPhoneSection;
 	
 
-	public static final String constxpathOnProceedSections="//div[@class=\"flightDetails fl\"]/div[4]//form[@id=\"travellerForm\"]/div[2]";
+	public static final String constxpathOnProceedSections="//div[@class=\"flightDetails fl\"]//form[@id=\"travellerForm\"]/div[2]";
 	
 	public static final String proccedButtonXpath=constxpathOnProceedSections+"/button";
 	@FindBy(xpath=proccedButtonXpath)

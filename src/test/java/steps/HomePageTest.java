@@ -1,6 +1,6 @@
 package steps;
 
-import com.goibibo.qa.pages.locators.HomePageActions;
+import com.goibibo.qa.pages.actions.HomePageActions;
 import com.goibibo.qa.testdata.TestData;
 import com.goibibo.qa.util.SeleniumDriver;
 
@@ -10,7 +10,7 @@ import cucumber.api.java.en.Then;
 public class HomePageTest {
 
 	HomePageActions homepageaction=new HomePageActions();
-	TestData testdata=new TestData();
+	
 	
 	@Given("^I am on the Home Page  of goibibo Website$")
 	public void i_am_on_the_Home_Page_of_goibibo_Website() throws Throwable {

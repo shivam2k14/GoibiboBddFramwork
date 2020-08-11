@@ -1,4 +1,4 @@
-package com.goibibo.qa.pages.locators;
+package com.goibibo.qa.pages.actions;
 
 import java.io.IOException;
 import java.util.Calendar;
@@ -11,11 +11,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 
-import com.goibibo.qa.pages.actions.HomePageLocators;
+import com.goibibo.qa.pages.locators.HomePageLocators;
 import com.goibibo.qa.testdata.TestData;
 import com.goibibo.qa.util.SeleniumDriver;
 import com.goibibo.qa.util.TestUtil;
+
+
 
 
 public class HomePageActions {
@@ -27,7 +30,9 @@ public class HomePageActions {
 	//Initializing the Page Objects:
 		public HomePageActions()  {
 			homePageLocators=new HomePageLocators();
-			PageFactory.initElements(SeleniumDriver.getDriver(), homePageLocators);
+			AjaxElementLocatorFactory factory=new AjaxElementLocatorFactory(SeleniumDriver.getDriver(), 50);
+		      
+			PageFactory.initElements(factory, homePageLocators);
 		}
 		
 		
@@ -84,7 +89,7 @@ public class HomePageActions {
 					 break;
 				 }
 			 }
-			 
+			 TestUtil.wait(SeleniumDriver.getDriver(),2);
             return  homePageLocators.destinationElem.getAttribute("value");
 			
 		}
@@ -103,7 +108,7 @@ public class HomePageActions {
 				{
 				   while( !homePageLocators.elemOfMonthDisplay.getText().contains(month_year) )
 				   {  
-					   //System.out.println(" in equal");
+					  
 					   homePageLocators.elemOfNavigationButtonOnCalendor.click();
 					   TestUtil.wait(SeleniumDriver.getDriver(),2);
 				       
@@ -111,6 +116,9 @@ public class HomePageActions {
 				   }
 				   
 				}
+				
+				
+				
 				else if( yearDiff>0)
 					
 					{
@@ -118,7 +126,7 @@ public class HomePageActions {
 					   while( !homePageLocators.elemOfMonthDisplay.getText().contains(year) )
 					   {  
 						   try {
-						  // System.out.println(" in greater");
+						  
 							   homePageLocators.elemOfNavigationButtonOnCalendor.click();
 						   TestUtil.wait(SeleniumDriver.getDriver(),2);
 					       
@@ -135,7 +143,7 @@ public class HomePageActions {
 					   }
 					   while( !homePageLocators.elemOfMonthDisplay.getText().contains(month_year) )
 					   {  
-						   //System.out.println(" in greater");
+						   
 						   homePageLocators.elemOfNavigationButtonOnCalendor.click();
 					      TestUtil.wait(SeleniumDriver.getDriver(),2);
 					       
@@ -146,6 +154,11 @@ public class HomePageActions {
 					   
 					   
 					} 
+				
+				
+				
+				
+				
 		  }
 			
 		public  String clickOnDayOfDepartureDate(  String day) throws InterruptedException
@@ -217,6 +230,7 @@ public class HomePageActions {
 				   {  
 					   //System.out.println(" in equal");
 					   homePageLocators.elemOfNavigationButtonOnCalendor.click();
+					   //
 					   TestUtil.wait(SeleniumDriver.getDriver(),2);
 				       
 				   

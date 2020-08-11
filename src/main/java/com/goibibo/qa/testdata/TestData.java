@@ -5,7 +5,10 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Properties;
 import java.util.Scanner;
 
@@ -41,7 +44,7 @@ public class TestData {
 	public static String email;
 	public static String phoneNum;
 	
-	public TestData()  {
+	public TestData() throws IOException  {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("E:\\Shivam\\seleniumEclipse\\GoibiboBddFrameworkTest\\src\\main\\java\\com\\goibibo\\qa\\config\\config.properties");
@@ -54,7 +57,39 @@ public class TestData {
 		
 		splitDepartDateIntoDayMonthYrFormate();
 		splitDesttDateIntoDayMonthYrFormate();
+		TakeDataFromCommandLine();
 	}
+	
+	public static void CheckDate() throws ParseException
+	{
+        // Create SimpleDateFormat object 
+        SimpleDateFormat 
+            sdfo 
+            = new SimpleDateFormat("dd-MMMM-yyyy"); 
+  
+        // Get the two dates to be compared 
+        Date d1 = sdfo.parse(prop.getProperty("dateDepart")); 
+        Date d2 = sdfo.parse(prop.getProperty("dateReturn")); 
+  
+        // Print the dates 
+        System.out.println("Date1 : " + sdfo.format(d1)); 
+        System.out.println("Date2 : " + sdfo.format(d2)); 
+  
+        // Compare the dates using compareTo() 
+        if (d2.compareTo(d1) > 0 || d2.compareTo(d1) == 0) { 
+  
+            // When Date d1 > Date d2 
+            System.out.println("Return Date and Departure date are in correct for journey"); 
+        } 
+  
+        else  { 
+  
+            // When Date d1 < Date d2 
+            System.out.println("Please give correct date for return jouney. \nEither it should be same or greater than departure date."); 
+          System.exit(0);
+        } 
+	}
+	
 	public static void splitDepartDateIntoDayMonthYrFormate()
 	{
           String dateDepart = prop.getProperty("dateDepart");
@@ -77,7 +112,7 @@ public class TestData {
 			
 	public static void TakeDataFromCommandLine() throws IOException
 	{
-		//String  str[]=new String[7];
+		
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 
@@ -112,7 +147,7 @@ public class TestData {
 	    
 	}
         
-        //str[0]=SecureProtec;
+
         
 	    System.out.println("1. Mr");
         System.out.println("2.  Mrs");
@@ -151,7 +186,7 @@ public class TestData {
 		    System.out.println("Please Enter the valid FirstName :: ");
 		    firstName= br.readLine();
 	    }
-	    //str[2]=firstName;
+	    
 	    
 
 	    System.out.println("Please Enter the user MiddleName :: ");
@@ -162,7 +197,7 @@ public class TestData {
 		    System.out.println("Please Enter the valid MiddleName :: ");
 		    middleName= br.readLine();
 	    }
-	    //str[3]=middleName;
+	    
 	    
 
 	    System.out.println("Please Enter the user LastName :: ");
@@ -174,7 +209,7 @@ public class TestData {
 		    System.out.println("Please Enter the valid LastName :: ");
 		    LastName= br.readLine();
 	    }
-	   // str[4]=LastName;
+
 	    
 	    System.out.println("Please Enter the user email :: ");
 	    email= br.readLine();
@@ -183,7 +218,7 @@ while(!TestUtil.isValidEmail(email)) {
 	    System.out.println("Please Enter the correct format eof   email :: ");
 	    email= br.readLine();
 }
-	   // str[5]=email;
+	  
 
 	    System.out.println("Please Enter the user phoneNum :: ");
 	    phoneNum= br.readLine();
@@ -193,9 +228,7 @@ while(!TestUtil.isValidEmail(email)) {
 		    System.out.println("Please Enter correct formate of  phoneNum :: ");
 		    phoneNum= br.readLine();
 	    }
-	   // str[6]=phoneNum;
-	    
-		//return str; 
+	   
 	}
 	
 }

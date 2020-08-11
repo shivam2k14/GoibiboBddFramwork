@@ -1,4 +1,4 @@
-package com.goibibo.qa.pages.actions;
+package com.goibibo.qa.pages.locators;
 
 import java.io.IOException;
 import java.util.Calendar;
@@ -39,10 +39,12 @@ public class HomePageLocators{
 	@FindBy(css=cssSelctorOfMonthDisplay)
 	public WebElement elemOfMonthDisplay;
 	
-	public static final String cssSelectorOfMonthNavigationButton="div[class=\"fareCalFlt \"]>div>div:nth-of-type(1)>span";
+	public static final String cssSelectorOfMonthNavigationButton="div[class=\"fareCalFlt \"]>div>div>span[class=\"DayPicker-NavButton DayPicker-NavButton--next\"]";
 	@FindBy(css=cssSelectorOfMonthNavigationButton)
 	public WebElement elemOfNavigationButtonOnCalendor;
 	
+	
+
 	@FindBy(id="departureCalendar")
 	public WebElement elemOfDepartureDate;
 	

@@ -1,13 +1,19 @@
 package com.goibibo.qa.util;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -22,8 +28,23 @@ public class TestUtil {
 	
 	public static void wait(WebDriver driver,  int time)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, time);
+		try {
+	        TimeUnit.SECONDS.sleep(time);
+	    } catch (InterruptedException e) {
+	        e.printStackTrace();
+	    }
+	
 	}
+	
+	 public static void capture(WebDriver driver,String screenShotName) throws IOException
+	    {
+	        TakesScreenshot ts = (TakesScreenshot)driver;
+	        File source = ts.getScreenshotAs(OutputType.FILE);
+	        String dest = "E:\\Shivam\\seleniumEclipse\\GoibiboBddFrameworkTest\\Screenshot\\Output"+"\\"+screenShotName+".png";
+	        File destination = new File(dest);            
+	        FileUtils.copyFile(source, destination);
+	    }
+	   
 	
 	public static boolean isAlertPresent(WebDriver driver) 
 	{ 

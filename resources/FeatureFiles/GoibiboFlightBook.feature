@@ -17,6 +17,8 @@ Feature: Acceptance testing.
     Then I click on Search Flights
     Then I select the highest price of departure flight
     Then I select the highest price of destination flight
+    Then I wait for three sec_take_screnshotIst
+    Then I capture screenshotIst
     Then I click on Book Flights
     Then I scroll upto Traveller Protection Form
     Then I select Secure Option on Travller Protetion radioButton
@@ -24,11 +26,18 @@ Feature: Acceptance testing.
     Then I enter the Full name 
     Then I enter the Email id 
     Then I enter the phone number
+    Then I wait for three sec_take_screnshotSecond
+    Then I capture screenshotSecond
     Then I click on proceed button
     Then I click on SafetyCovidMsz 
     Then I scroll upto Payment Options
     Then I click On wallet section of Payment 
     Then I click on AmazonPay Payment Option
+    Then I wait for three sec_take_screnshotThird
+    Then I capture screenshotThird
     Then I click on Pay Button
     
+    
+    
+   
  

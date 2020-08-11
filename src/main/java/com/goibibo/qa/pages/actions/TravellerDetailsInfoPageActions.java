@@ -1,4 +1,4 @@
-package com.goibibo.qa.pages.locators;
+package com.goibibo.qa.pages.actions;
 
 import java.io.IOException;
 
@@ -8,9 +8,10 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.pagefactory.AjaxElementLocatorFactory;
 import org.openqa.selenium.support.ui.Select;
 
-import com.goibibo.qa.pages.actions.TravellerDetailsInfoPageLocators;
+import com.goibibo.qa.pages.locators.TravellerDetailsInfoPageLocators;
 import com.goibibo.qa.testdata.TestData;
 import com.goibibo.qa.util.SeleniumDriver;
 import com.goibibo.qa.util.TestUtil;
@@ -26,7 +27,9 @@ public class TravellerDetailsInfoPageActions {
 	public TravellerDetailsInfoPageActions()  {
 		
 		travellerDetailsInfoPageLocators=new TravellerDetailsInfoPageLocators();
-		PageFactory.initElements(SeleniumDriver.getDriver(), travellerDetailsInfoPageLocators);
+		AjaxElementLocatorFactory factory=new AjaxElementLocatorFactory(SeleniumDriver.getDriver(), 50);
+	      
+		PageFactory.initElements(factory, travellerDetailsInfoPageLocators);
 		
 	}
 	
