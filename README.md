@@ -5,9 +5,9 @@ Selenium Examples using Webdriver- This Example Demonstrates the Booking of Flig
 Selenium WebDriver cucumber Junit Maven PageObject Model
 
 #### **Example Covered:**
-    1. Given I am on the Home Page  of goibibo Website
-    2. Then I check the title of the page
-    3. Then I select RoundTrip radioButton
+    Given I am on the Home Page  of goibibo Website
+    Then I check the title of the page
+    Then I select RoundTrip radioButton
     Then I enter  departure city  values 
     Then I enter  destination city  values 
     Then I naviagte to month of departure date
